@@ -25,12 +25,13 @@
             const main = document.getElementById('toost');
             if (main){
                 const toost = document.createElement('div');
-
+                const feVout = (duration + 1000).toFixed(2);
+                
                 // Auto remove toost
                 const autoRemoveId = setTimeout(function(){
                     main.removeChild(toost);
-                }, duration + 1000);
-                const feVout = (duration + 1000).toFixed(2);
+                }, feVout);
+                
 //error duration + 1000 Run, feVout notrun
 
                 // Remove toost when click
