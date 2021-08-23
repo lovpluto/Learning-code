@@ -1,0 +1,118 @@
+body {
+    display: flex;
+    /* flex-direction: column;
+    align-items:center; */
+    /* justify-content: center; */
+    padding: 100px 300px;
+    align-content: space-around;
+    font-family: 'Courier New', Courier, monospace;    
+}
+#toost{
+ position: fixed; 
+ top: 32px;
+ right: 32px;  
+}
+.toost {
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+    background-color: #FFF;
+    border-radius: 2px;
+    min-width: 400px;
+    max-width: 450px;
+    border-left: 8px solid;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, .06);
+    transition: all linear .3s;
+}
+@keyframes slideInLeft{
+    from{
+        opacity: 0;
+        transform: translateX(calc(100% + 32px));
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+@keyframes fadeOut{
+    to {
+        opacity: 0;
+    }
+}
+
+.toost + .toost {
+    margin-top: 24px;
+}
+.toost--success {
+    border-color: springgreen;
+}
+.toost--error{
+    border-color: sienna;
+}
+.toost--error .toost__icon{
+    color: sienna;
+}
+.toost--info {
+    border-color: blue;
+}
+.toost--warning {
+    border-color: crimson;
+}
+.toost--success .toost__icon {
+    color: springgreen;
+}
+.toost--info .toost__icon {
+    color: blue;
+}
+.toost--warning .toost__icon {
+    color: crimson;
+}
+.toost__icon {
+    font-size: 48px;
+    padding: 0 20px;
+}
+.toost__body{
+    flex-grow: 1;
+}
+.toost__title{
+    font-size: 24px;
+    font-style: bold;  
+    margin-bottom: 0px;
+}
+.toost__msg{
+    font-size: 14px;
+}
+.toost__close{
+    font-size: 20px;
+    padding: 0 16px;
+}
+.toost__close:hover{
+    cursor: pointer;
+}
+/* button */
+.btn{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.btn + .btn{
+    margin-left: 20px;
+}
+.btn--success{
+    background-color: darkgreen;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: wheat;
+}
+.btn--danger:hover{
+    cursor: pointer;
+}
+.btn--success:hover{
+    cursor: pointer;
+}
+.btn--danger{
+    background-color: red;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: wheat;
+}
