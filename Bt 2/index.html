@@ -5,9 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link type="text/css" href="./style.css" ref='stylesheet'>
+    <link type="text/css" href="./style.css" rel='stylesheet'>
+    <link href="../fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet"> <!--load all fontstyle -->
 </head>
 <body>
-    
+    <div>
+        <div id="toost">
+        </div>
+    </div>
+    <div onclick="showSuccessToost();" class="btn btn--success">Show success</div>
+    <div onclick="showErrorToost();" class="btn btn--danger">Show danger</div>
+
+    <script>
+        function toast({title ='',
+        message = '',
+        type = 'info',
+        duration=3000
+    })  {
+            const main = document.getElementById('toost');
+            if (main){
+                const toost = document.createElement('div');
+
+                // Auto remove toost
+                const autoRemoveId = setTimeout(function(){
+                    main.removeChild(toost);
+                }, duration + 1000);
+
+                // Remove toost when click
+                toost.onclick = function(e){
+                    if ( e.target.closest('.toost__close')){
+                        main.removeChild(toost);
+                        clearTimeout(autoRemoveId);
+                    }
+                }
+
+                const icons = {
+                    success: 'fas fa-check-circle',
+                    info: 'fas fa-info-circle',
+                    warning: 'fas fa-exclamation-triangle',
+                    error: 'fas fa-bug',
+                };
+                const icon = icons[type]
+                const delay = (duration / 1000).toFixed(2);
+                const feVout = (duration + 1000).toFixed(2);
+                
+                toost.classList.add('toost', `toost--${type}`);
+                toost.style.animation = `slideInLeft ease 1s, fadeOut linear 1s ${delay}s forwards`;
+                
+                toost.innerHTML = `
+                <div class="toost__icon">
+                    <i class="${icon}"></i>
+                </div>
+                <div class="toost__body">
+                    <h3 class="toost__title">${title}</h3>
+                    <p class="toost__msg">${message}</p>
+                </div>
+                <div class="toost__close">
+                    <i class="fas fa-times"></i>
+                </div>`;
+                main.appendChild(toost);
+               
+            }
+        }
+      
+        function showSuccessToost() {
+            toast({
+            title: 'Thành công',
+            message: 'bạn đã đăng kí thành công',
+            type: 'success',
+            duration: 5000
+        });
+        }
+
+        function showErrorToost() {
+            toast({
+            title: 'Thất bại ',
+            message: 'Bạn cần liên hệ admin' ,
+            type: 'error',
+            duration:5000
+        });
+        }
+    </script>
 </body>
 </html>
