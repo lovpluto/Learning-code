@@ -1,0 +1,38 @@
+.header{
+    background-image: linear-gradient(0,#fe6433,#f53e2d);
+    height: 120px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-item{
+    display: inline-block;
+    font-size: 1.5rem;
+    color: var(--white-color) ;
+    position: relative;
+    margin: 0 8px;    
+}
+
+.font--bold{
+    font-weight: 600;
+}
+
+.list-item--separate::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 12px;
+    background-color: lightcoral;
+    right: -9px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.list-item:hover{
+    opacity: .8;
+    cursor: pointer;
+}
