@@ -40,3 +40,15 @@ a{
 ul{
     padding: 0;
 }
+
+/* animation */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

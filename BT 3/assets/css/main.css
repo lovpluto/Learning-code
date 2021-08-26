@@ -40,3 +40,63 @@
 .item-icon{
     font-size: 1.6rem ;
 }
+
+.item-icon::before{
+    padding-right: 5px;
+}
+
+.unpointer{
+    cursor: text;
+    color: var(--white-color) ;
+}
+
+.mag-5 {
+    margin: 0 2px;
+}
+
+/* qr code */
+.header-qrcode{
+    width: 230px;
+    position: absolute;
+    background-color: var(--white-color);
+    left: 0;
+    top: 200%;
+    border-radius: 4px;
+    display: none;
+    animation: fadeIn ease .5s;
+    
+}
+
+.hover-qr:hover .header-qrcode{
+    display: block;
+}
+
+.hover-qr::before{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    content: "";
+    top:10px;
+    display: block;
+}
+.qrcode{
+    width: 230px;
+}
+
+.qrcode-ap{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.link-googleplay{
+    height: 45px;
+    margin-left: 3px;
+
+}
+.link-appstore{
+    height: 38px;
+    padding-top: 7px;
+    margin-right: 15px;
+}
+
