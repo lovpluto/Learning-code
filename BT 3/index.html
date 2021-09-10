@@ -17,7 +17,7 @@
             <nav class="navbar grid">
                 <ul class="navbar__list--left">
                     <li class="list-item hover-qr list-item--separate">
-                        Vào cửa hàng trên ứng dụng JJID
+                        <a href="#" class="item__link">Vào cửa hàng trên ứng dụng JJID</a>
                         <div class="header-qrcode">
                             <img src="./assets/img/tao-ma-qr-code-san-pham-1_1620927223.jpg" alt="qr code" class="qrcode">
                             <div class="qrcode-ap">
@@ -40,57 +40,74 @@
                         </a>
                     </li>
                 </ul>
-                <ul class="navbar__list--right">
-                    <li class="list-item">
+                <ul class="navbar__list--right ">
+                    <li class="list-item hover-qr ">
                         <a href="#" class="item__link">
                             <i class="far item-icon fa-bell">Thông báo</i>
                         </a>
-                        <div class="list-item--notify">
-                            <h3>Thông báo mới nhận</h3>
+                        <div class="list-item--notify">                    
+                            <h3>Thông Báo Mới Nhận</h3>
                             <ul class="notify-list">
                                 <li class="notify-list-item">
                                     <a href="#" class="item-link">
                                         <img src="./assets/img/1.jpg" alt="Sản phẩm 1">
-                                        <span class="notify_product"></span>
-                                        <span class="notify_product--date"></span>
+                                        <div class="notify_product-info">
+                                            <span class="notify_product">xiangling and main xiangling and main xiangling and main</span>
+                                            <span class="notify_product--date"> 28/12/1997</span>
+                                        </div>
                                     </a>
                                 </li>
                                 <li class="notify-list-item">
                                     <a href="#" class="item-link">
                                         <img src="./assets/img/6.jpg" alt="Sản phẩm 2">
-                                        <span class="notify_product"></span>
-                                        <span class="notify_product--date"></span>
+                                        <div class="notify_product-info">
+                                            <span class="notify_product">xiangling and main xiangling and main xiangling and main</span>
+                                            <span class="notify_product--date"> 28/12/1997</span>
+                                        </div>
                                     </a>
                                 </li>
                                 <li class="notify-list-item">
                                     <a href="#" class="item-link">
                                         <img src="./assets/img/5.jpg" alt="Sản phẩm 3">
-                                        <span class="notify_product"></span>
-                                        <span class="notify_product--date"></span>
+                                        <div class="notify_product-info">
+                                            <span class="notify_product">xiangling and main xiangling and main xiangling and main</span>
+                                            <span class="notify_product--date"> 28/12/1997</span>
+                                        </div>
                                     </a>
                                 </li>
                                 <li class="notify-list-item">
                                     <a href="#" class="item-link">
                                         <img src="./assets/img/2.jpg" alt="Sản phẩm 4">
-                                        <span class="notify_product"></span>
-                                        <span class="notify_product--date"></span>
+                                        <div class="notify_product-info">
+                                            <span class="notify_product">xiangling and main xiangling and main xiangling and main</span>
+                                            <span class="notify_product--date"> 28/12/1997</span>
+                                        </div>
                                     </a>
                                 </li>
                                 <li class="notify-list-item">
                                     <a href="#" class="item-link">
                                         <img src="./assets/img/3.jpg" alt="Sản phẩm 5">
-                                        <span class="notify_product"></span>
-                                        <span class="notify_product--date"></span>
+                                        <div class="notify_product-info">
+                                            <span class="notify_product">xiangling and main xiangling and main xiangling and main</span>
+                                            <span class="notify_product--date"> 28/12/1997</span>
+                                        </div>
                                     </a>
                                 </li>
                                 <li class="notify-list-item">
                                     <a href="#" class="item-link">
                                         <img src="./assets/img/4.jpg" alt="Sản phẩm 6">
-                                        <span class="notify_product"></span>
-                                        <span class="notify_product--date"></span>
+                                        <div class="notify_product-info">
+                                            <span class="notify_product">xiangling and main xiangling and main xiangling and main</span>
+                                            <span class="notify_product--date"> 28/12/1997</span>
+                                        </div>
                                     </a>
                                 </li>
                             </ul>
+                            <footer class="notyfy-footer">
+                                <a href="#" class="notyfy-footer-btn">
+                                    Xem tất cả
+                                </a>
+                            </footer>
                         </div>
                     </li>
                     <li class="list-item">
@@ -111,6 +128,59 @@
         <footer class="footer">
 
         </footer>
+    </div>
+    <!-- modal -->
+    <div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <div class="modal__inner">
+
+                <!-- auth form -->
+                <div class="auth-form">
+                    
+                    <div class="auth-form__header">
+                        <H1 class="auth-form__header--text"> ĐĂNG KÝ</H1>
+                        <a href="#" class="auth-form__header--signIn">Đăng Nhập</a>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" title="Email" placeholder="Email">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" title="Mật khẩu" placeholder="Mật khẩu ">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" title="Nhập lại mật khẩu" placeholder="Nhập lại mật khẩu">
+                        </div>              
+                    </div>
+                    <div class="auth-form__">
+                        <p class="auth-form__text">
+                            Bằng việc đăng kí, bạn đã đồng ý với Shopee về 
+                            <a href="#" class="modal__rules--link">Điều khoản dịch vụ</a> & 
+                            <a href="#" class="modal__rules--link">Chính sách bảo mật </a>
+                        </p>
+                    </div>
+                    <div class="auth-form__controls">
+                        <button class="btn">Trở lại</button>
+                        <button class="btn btn--primary">Đăng Ký</button>
+                    </div>
+                    <div class="auth-form__social">
+                        <a class="social__facebook">
+                            <i class="fab fa-facebook-f"></i>
+                            Kết nối với Facebook
+                        </a>
+                        <a class="social__facebook">
+                            <i class="fab fa-google"></i>
+                            Kết nối với Google
+                        </a>
+                    </div>
+                </div>                
+            </div>
+            
+
+
+        </div>
     </div>
 </body>
 </html>
