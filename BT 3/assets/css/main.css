@@ -215,33 +215,33 @@
  }
 
  .modal__body{
-    width: 400px;
-    height: 450px;
     background-color: var(--white-color);
     margin: auto;
     position: relative;
     z-index: 1;
     border-radius: 3px;
  }
+
  .auth-form__header{
     display: flex;
     justify-content:space-between;
  }
 
+ .auth-form__container  {
+    padding: 0 32px ;
+}
  .auth-form__header--text{
     font-weight: 400;
-    padding: 12px 0 0 24px;
  }
 
  .auth-form__header--signIn{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
     font-size: 1.8rem;
     font-weight: 600;
-    padding: 12px 24px 0 0;
     color: tomato;
  }
+
 
  .modal__rules--link{
      color: tomato;
