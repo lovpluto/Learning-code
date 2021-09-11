@@ -13,6 +13,7 @@ html{
     line-height: 1.6rem;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+
 }
 
 .grid{
@@ -51,4 +52,22 @@ ul{
     to {
         opacity: 1;
     }
+}
+
+/* Button style */
+
+.btn{
+    height: 36px;
+    min-width: 142px;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 0px;
+}
+
+.btn.btn--primary{
+    color: var(--white-color);
+    background-color: #f53e2d;
 }
