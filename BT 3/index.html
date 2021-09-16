@@ -125,20 +125,80 @@
                     <img class="header__logo-img" src="./assets/img/Shopee.svg" />
                 </div>
                 <div class="header__search">
-                    <input type="text" class="search__input" placeholder="Nhập từ khóa">
+                    <div class="search__input-wrap">
+                        <input type="text" class="search__input" placeholder="Nhập từ khóa">
+                            
+                        <!-- search history -->
+                        <div class="search__input--history">
+                            <p class="search__input--history-heading">Lịch sử tìm kiếm </p>
+                            <ul class="search__input--history-list">
+                                <li class="history-item">
+                                    <a href="#">Jack jimson</a>
+                                </li>
+                                <li class="history-item">
+                                    <a href="#">Jack jimson</a>
+                                </li>
+                                <li class="history-item">
+                                    <a href="#">Jack jimson</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                     <div class="search__selection-shop">
                         <span class="search__selection-shop-lable">Trong shop</span>
                         <div class="search__optiop search__selection-shop-icon">
                             <i class="fas fa-angle-down "></i>     
-                        </div>                   
+                        </div>     
+                        
+                        <ul class="header__search--option">
+                            <li class="header__search--option-item header__search--option-item-active">
+                                <span>Trong shop</span>
+                                <i class="fas fa-check"></i>
+                            </li>
+                            <li class="header__search--option-item">
+                                <span>Ngoài shop</span>
+                                <i class="fas fa-check"></i>
+                            </li>
+                        </ul>
                     </div>
                     <button class="search__icon search__icon-search">
                         <i class="fas fa-search icon_search"></i>
                     </button>
                     
                 </div>
-                <div class="header__cast">
-                    <i class="fas fa-cart-plus header__cast-icon"></i>
+                <div class="header__cart">
+                    <i class="fas fa-cart-plus header__cart-icon"></i>
+
+                    <div class="header__cart--dissble">
+                        <img  src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/9bdd8040b334d31946f49e36beaf32db.png" alt="">
+                    </div>
+                    <!-- <div class="header__cart--tab-list ">
+                        <p>Sản phẩm mới thêm </span>
+                        <ul class="cart--list">
+                            <li class="cart--list-item">
+                                <img src="./assets/img/1.jpg" alt="Sản phẩm 1" class="cart--item-img">
+                                <div class="Cart--name-sold">
+                                    <div class="Cart--name-product">xiangling and main xiangling and main xiangling and main</div>
+                                    <div class="cart--cast">đ500.000</div>
+                                </div>
+                            </li>
+                            <li class="cart--list-item">
+                                <img src="./assets/img/1.jpg" alt="Sản phẩm 1" class="cart--item-img">
+                                <div class="Cart--name-sold">
+                                    <div class="Cart--name-product">xiangling and main xiangling and main xiangling and main</div>
+                                    <div class="cart--cast">đ500.000</div>
+                                </div>
+                            </li>
+                            <li class="cart--list-item">
+                                <img src="./assets/img/1.jpg" alt="Sản phẩm 1" class="cart--item-img">
+                                <div class="Cart--name-sold">
+                                    <div class="Cart--name-product">xiangling and main xiangling and main xiangling and main</div>
+                                    <div class="cart--cast">đ500.000</div>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div> -->
                 </div>
             </div>
         </header>
