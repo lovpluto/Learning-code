@@ -20,20 +20,7 @@ html{
 
 }
 
-.grid{
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
-}
 
-.gird__full-width{
-    width: 100%;
-}
-
-.grid__row {
-    display: flex;
-    flex-wrap: wrap;
-}
 
 li{
     list-style: none;
@@ -70,9 +57,9 @@ ul{
     font-weight: 500;
     padding: 0 26px;
     cursor: pointer;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
 }
 
 .btn.btn--primary-normal:hover{
@@ -87,3 +74,53 @@ ul{
 .btn.btn--disabled{
     cursor: default;   
 }
+
+/* Reponsive Nav */
+
+.grid{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.gird__full-width{
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.grid__colum-2{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 16.6667%;
+}
+
+.grid__colum-10{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% - 16.6667%);
+}
+
+.pt-20{
+    padding-top: 20px;
+}
+
+/* selection */
+    .select-input{
+        height: 34px;
+        padding: 0 12px;
+        border-radius: 2px;
+        min-width: 200px ;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    

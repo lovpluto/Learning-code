@@ -115,8 +115,12 @@
                             <i class="far item-icon fa-question-circle">Trợ giúp</i>
                         </a>
                     </li>
-                    <li class="list-item font--bold list-item--separate">Đăng ký</li>
-                    <li class="list-item font--bold">Đăng Nhập</li>
+                    <!-- <li class="list-item font--bold list-item--separate">Đăng ký</li>
+                    <li class="list-item font--bold">Đăng Nhập</li> -->
+                    <li class="list-item-user list-item">
+                        <img src="./assets/img/tao-ma-qr-code-san-pham-1_1620927223.jpg" alt="" class="user-avatar">
+                        <span class="user-name">Lưu Tiến Đạt</span>
+                    </li>
                 </ul>
             </nav>
 
@@ -168,11 +172,12 @@
                 </div>
                 <div class="header__cart">
                     <i class="fas fa-cart-plus header__cart-icon"></i>
+                    <span class="notice">3</span>
 
-                    <div class="header__cart--dissble">
+                    <!-- <div class="header__cart--dissble">
                         <img  src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/9bdd8040b334d31946f49e36beaf32db.png" alt="">
-                    </div>
-                    <!-- <div class="header__cart--tab-list ">
+                    </div> -->
+                    <div class="header__cart--tab-list ">
                         <p>Sản phẩm mới thêm </span>
                         <ul class="cart--list">
                             <li class="cart--list-item">
@@ -198,13 +203,73 @@
                             </li>
                         </ul>
 
-                    </div> -->
+                    </div>
+                
                 </div>
             </div>
         </header>
 
-        <div class="container">
+        <div class="app__container">           
+            <div class="grid">
+                <div class="grid__row pt-20">
+                    <div class="grid__colum-2">
+                        <nav class="category">
+                            <H3 class="category__heading">
+                                <i class="fas fa-bars category__heading-icon"></i>
+                                Danh mục
+                            </H3>   
+                            <ul class="category-list"> 
+                                <li class="category-item category-item--active">
+                                    <a href="#" class="category-item__link">Trang điểm mặt</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Trang điểm môi</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Trang điểm mắt</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="grid__colum-10">
+                        <div class="home-filter">
+                            <span class="home-filter__label">Sắp xếp theo</span>
+                            <button class="btn">Phổ biến</button>
+                            <button class="btn btn--primary">Mới nhất</button>
+                            <button class="btn">Bán chạy</button>
 
+                            <div class="select-input">
+                                <span class="select-input__label">Giá</span>
+                                <i class="fas fa-angle-down "></i>
+                                <ul class="select-input__list">
+                                    <li class="select-input__item">
+                                        <a href="#" class="select-input__link">Giá cao đến thấp</a>
+                                    </li>
+                                    <li class="select-input__item">
+                                        <a href="#" class="select-input__link">Giá thấp đến cao</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="home-filter__page">
+                                <span class="home-filter__page-num">
+                                    <span class="home-filter__page-current">1</span>/14
+                                </span>
+
+                                <div class="home-filter__page-control">
+                                    <a href="#" class="home-filter__page-btn home-filter__page-btn-dissble">
+                                        <i class="fas fa-angle-left "></i>
+                                    </a>
+                                    <a href="#" class="home-filter__page-btn ">
+                                        <i class="fas fa-angle-right "></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
 
         <footer class="footer">
