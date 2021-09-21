@@ -126,7 +126,6 @@
 .link-googleplay{
     height: 45px;
     margin-left: 3px;
-
 }
 .link-appstore{
     height: 38px;
@@ -1046,3 +1045,57 @@
         margin-bottom: 32px;
     }
 
+/*  footer */
+
+    .footer{
+        border-top: 4px solid tomato;
+        padding-top: 16px;
+        margin-bottom: 40px;
+    }
+
+    .footer__heading{
+        font-size: 1.6rem;
+        opacity: .5;
+        
+    }
+
+    .footer__list{
+        padding-left: 0;
+        list-style: none;
+    }
+
+    .footer__list-item-link{
+        text-decoration: none;
+        font-size: 1.2rem;
+        opacity: .8;
+        display: block;
+        padding: 2px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .footer__list-item-link i{
+        font-size: 1.8rem;
+        padding-right: 5px;
+    }
+
+    .footer__list-item-link:hover{
+        color: tomato;
+    }
+
+    .footer__list-link{
+        display: flex;
+    }
+
+    .footer__list-qrcode{
+        height: 80px;
+    }
+
+    .footer__qrcode-ap .link-googleplay{
+        height: 37px;
+    }
+
+    .footer__qrcode-ap .link-appstore{
+        height: 32px;
+        padding-left: 10px;
+    }
