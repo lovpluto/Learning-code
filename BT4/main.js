@@ -1,6 +1,11 @@
-var firstName = 'Son';
-var lastName = 'Dang';
+var b = {
+    name : 'Luu',
+    age: 18
+}
 
-var fullName = firstName +' '+ lastName;
+console.log(Object.keys(b))
+console.log(b[key])
 
-console.log(fullName)
+for ( var value of Object.values(b)){
+    console.log(b[key])
+}
