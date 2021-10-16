@@ -1,0 +1,44 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode",
+      "img": "../BT3/assets/img/1.jpg"
+    },
+    {
+      "title": "Javarscrip1",
+      "author": "dinh vl luon3",
+      "id": 2
+    },
+    {
+      "title": "Javarscrip3",
+      "author": "dinh vl luon3",
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "title": "123",
+      "author": "412",
+      "id": 7
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
