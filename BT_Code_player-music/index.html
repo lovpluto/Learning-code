@@ -22,17 +22,24 @@
 
                 <div class="navBar">
                     <ul class="navBar--list">
-                        <li class="navBar--list-icon"><i class="fas fa-redo-alt"></i></li>
-                        <li class="navBar--list-icon"><i class="fas fa-step-backward"></i></li>
-                        <li class="navBar--list-icon">
-                            <!-- <i class="fas fa-play"></i> -->
-                            <i class="fas fa-pause"></i></li>
-                        <li class="navBar--list-icon"><i class="fas fa-step-forward"></i></li>
-                        <li class="navBar--list-icon"><i class="fas fa-random"></i></li>
+                        <li class="navBar--list-icon btn-repeat"><i class="fas fa-redo-alt"></i></li>
+                        <li class="navBar--list-icon btn-prev"><i class="fas fa-step-backward"></i></li>
+                        <li class="navBar--list-icon btn-toggle-play">
+                            <i class="fas fa-play"></i>
+                            </li>
+                        <li class="navBar--list-icon btn-next"><i class="fas fa-step-forward"></i></li>
+                        <li class="navBar--list-icon btn-random"><i class="fas fa-random"></i></li>
+                        <li class="navBar--list-icon btn-volume">
+                            <i class="fas fa-volume-up volume-hover"></i>        
+                            <input type="range" id="volume" class="volume" value="100" step="0.001" min="0" max="100">
+                        </li>
                     </ul>
                 </div>
+
+                <input type="range" id="progress" class="progress testt" value="0" step="0.01" min="0" max="100">
             </div>
             <ul class="listSong">
+
                 <li class="listSong__item">
                     <img src="https://photo-resize-zmp3.zadn.vn/w165_r1x1_jpeg/cover/2/4/8/b/248b160179fec67cf44a1de15f731c4d.jpg" alt="" class="listSong__item--img">
                     <div class="listSong__item--bazer">
@@ -45,6 +52,7 @@
                 </li>
             </ul>
         </div>
+        <audio src="" id="audio"></audio>
     <script src="./main.js">
     
     </script>
